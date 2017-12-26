@@ -1,0 +1,2 @@
+# serialport_electron
+基于electron的串口工具桌面应用
