@@ -1,10 +1,12 @@
 # serialport_electron_start
-> 这是一个基于electron的串口工具桌面应用，因为我在网上走了很多坑，都不成功，终于找到对的方法，编译成功了，这里讲下我的编译成功的方法。
+> 这是一个基于electron的串口工具桌面应用，因为我在网上走了很多坑，都不成功，终于找到对的方法，编译成功了，这里讲下我的编译成功的方法。希望能够帮到大家
 
 > **完整demo在demo目录中，包括编译好的node_modules，所以有点大**
 
-## 过程
-> 这里需要安装python 2.7的环境，记得是2.7，3的话是不行的。
+# 实现过程
+## 装备工作
+### 安装python 2.7
+> 这里需要安装python 2.7的环境，记得是2.7，3的话是不行的。这里就不再展开python的安装过程，执行下载安装即可。
 
 ### 安装electron
 > 对于可以翻墙的同学用这个
@@ -17,10 +19,13 @@
 
 ### 安装electron-prebuilt
 
-`npm install -g electron-prebuilt`
+`cnpm install -g electron-prebuilt`
+
+## 开始
 
 ### 安装官方的例子
-> 官方文档的例子我就不在这里展开解释了``
+> 官方文档的例子我就不在这里展开解释了，可以查看官方文档  [https://electron.org.cn/doc/tutorial/quick-start.html](https://electron.org.cn/doc/tutorial/quick-start.html "https://electron.org.cn/doc/tutorial/quick-start.html")
+
 
 > 下载demo
 
@@ -34,11 +39,11 @@
 
 `cnpm install --save serialport`
 
-> 安装electron-rebuild, 因为serialport编译的环境是电脑的环境，我们需要重新编译成eletron的环境，所以我们需要electron-rebuild
+> 安装electron-rebuild, 因为serialport是根据系统环境编译的，当我们安装时，我们编译的成的是系统环境的serialport，所以我们需要重新编译成eletron的环境，所以我们需要electron-rebuild
 
-`npm install --save-dev electron-rebuild`
+`cnpm install --save-dev electron-rebuild`
 
-> 重新编译, 因为当前版本的electron是1.7.10的，所以我们重新把模块编译成适应1.7.10的
+> 重新编译, 因为我当前版本的electron是1.7.10的，所以我们重新把模块编译成适应1.7.10的, **这里记得要根据你的electron版本编译**
 
 `./node_modules/.bin/electron-rebuild -v 1.7.10`
 
