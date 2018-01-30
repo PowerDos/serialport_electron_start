@@ -79,3 +79,11 @@
 
 ## 运行效果
 ![](https://i.imgur.com/PlgtDdS.png)
+
+## 写了完整的小demo
+> 地址: [https://github.com/PowerDos/electron-serialport](https://github.com/PowerDos/electron-serialport)
+
+
+> 效果
+
+![](https://i.imgur.com/19mcrCM.png)
